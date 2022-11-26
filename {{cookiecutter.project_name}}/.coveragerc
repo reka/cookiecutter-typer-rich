@@ -1,0 +1,10 @@
+[run]
+command_line=-m pytest
+source={{cookiecutter.package_name}}
+branch=True
+
+[report]
+fail_under=94
+
+[json]
+pretty_print=True

@@ -1,0 +1,11 @@
+{
+    "project_title": "Dummy Experiment",
+    "project_name": "{{cookiecutter.project_title.lower().replace(' ','-')}}",
+    "package_name": "{{cookiecutter.project_name.replace('-','_')}}",
+    "commands": [
+        "single",
+        "multiple"
+    ],
+    "git_initial_commit": "y",
+    "commit_message": "{% if cookiecutter.git_initial_commit == 'y' %}project skeleton generated with cookiecutter-typer-rich{% else %} {% endif %}"
+}
