@@ -2,7 +2,7 @@ from typer.testing import CliRunner
 
 from {{ cookiecutter.package_name }}.cli import app
 
-runner = CliRunner()
+runner = CliRunner(mix_stderr=False)
 
 
 {% if cookiecutter.commands == "single" %}
