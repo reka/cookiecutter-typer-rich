@@ -2,6 +2,8 @@
     "project_title": "Dummy Experiment",
     "project_name": "{{cookiecutter.project_title.lower().replace(' ','-')}}",
     "package_name": "{{cookiecutter.project_name.replace('-','_')}}",
+    "author_name": "Example Author",
+    "author_email": "author@example.com",
     "commands": [
         "single",
         "multiple"
