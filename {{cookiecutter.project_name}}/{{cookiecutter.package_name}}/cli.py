@@ -11,7 +11,7 @@ app = typer.Typer(rich_markup_mode="markdown")
 @app.callback(invoke_without_command=True)
 def callback(
     ctx: typer.Context,
-    version: bool = typer.Option(False, help="Print the current version."),
+    version: bool = typer.Option(False, "--version", help="Print the current version."),
 ) -> None:
     """{{cookiecutter.project_title}}"""
     if version:
